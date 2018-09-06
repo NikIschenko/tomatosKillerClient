@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'by.jfuture.tomatos.killer.pi'
+version '1.0-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_1_10
+
+repositories {
+    mavenCentral()
+}
+
+ext.moduleName = 'by.jfuture.tomatosKillerPi'
+
+compileJava {
+    inputs.property("moduleName", moduleName)
+    doFirst {
+        options.compilerArgs = [
+                '--module-path', classpath.asPath,
+        ]
+        classpath = files()
+    }
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "by.jfuture.tomatos.killer.pi.Main"
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

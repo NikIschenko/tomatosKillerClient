@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5c16f42-50cf-44de-bbdd-c4c41201375f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../tomatosKillerBackend/src/main/java/by/jfuture/tomatos/killer/backend/config/TomatosKillerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tomatosKillerBackend/src/main/java/by/jfuture/tomatos/killer/backend/config/WebsocketConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tomatosKillerBackend/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/RandomString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/PiServo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/RotationParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/EventLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/FrameType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/SockJsEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/ClientMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/ServerMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/command/CommandSide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/command/CommandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Body.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Headers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/MessagePart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/TwoSideConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/TwoSideConnectionInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.angular-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.yo-rc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../divanga/front" beforeDir="false" afterPath="$PROJECT_DIR$/../../divanga/front" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/CONTRIBUTING.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/README.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/main/java/hello/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/main/java/hello/Greeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/main/java/hello/GreetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/main/java/hello/HelloMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/main/java/hello/WebSocketConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/main/resources/static/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/main/resources/static/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/complete/src/test/java/hello/GreetingIntegrationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/initial/src/main/resources/static/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gs-messaging-stomp-websocket-master/test/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maman.ga/backend" beforeDir="false" afterPath="$PROJECT_DIR$/../../maman.ga/backend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../proxy.conf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/docker/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/docker/app.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/docker/mongodb-cluster.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/docker/mongodb.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/docker/mongodb/MongoDB.Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/docker/mongodb/scripts/init_replicaset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/docker/sonar.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/ApplicationWebXml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/MongoTestApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/aop/logging/LoggingAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/ApplicationProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/AsyncConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/CacheConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/CloudDatabaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/DatabaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/DateTimeFormatConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/DefaultProfileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/JacksonConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/LocaleConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/LoggingAspectConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/LoggingConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/MetricsConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/ThymeleafConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/WebConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/audit/AuditEventConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/audit/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/dbmigrations/InitialSetupMigration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/dbmigrations/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/config/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/domain/AbstractAuditingEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/domain/Authority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/domain/PersistentAuditEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/domain/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/repository/AuthorityRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/repository/CustomAuditEventRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/repository/PersistenceAuditEventRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/repository/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/AuthoritiesConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/DomainUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/SecurityUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/SpringSecurityAuditorAware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/UserNotActivatedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/jwt/JWTConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/jwt/JWTFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/jwt/TokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/security/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/AuditEventService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/MailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/dto/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/mapper/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/service/util/RandomUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/AccountResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/AuditResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/LogsResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/ProfileInfoResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/UserJWTController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/UserResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/BadRequestAlertException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/CustomParameterizedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/EmailAlreadyUsedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/EmailNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/ErrorConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/ExceptionTranslator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/FieldErrorVM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/InternalServerErrorException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/InvalidPasswordException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/LoginAlreadyUsedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/errors/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/util/HeaderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/util/PaginationUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/vm/KeyAndPasswordVM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/vm/LoggerVM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/vm/LoginVM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/vm/ManagedUserVM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/mycompany/myapp/web/rest/vm/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/config/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/config/application-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/i18n/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/mails/activationEmail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/mails/creationEmail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/mails/passwordResetEmail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/account.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/account.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/activate/activate.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/activate/activate.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/activate/activate.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/activate/activate.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password-reset/finish/password-reset-finish.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password-reset/finish/password-reset-finish.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password-reset/finish/password-reset-finish.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password-reset/finish/password-reset-finish.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password-reset/init/password-reset-init.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password-reset/init/password-reset-init.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password-reset/init/password-reset-init.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password-reset/init/password-reset-init.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password/password-strength-bar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password/password-strength-bar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password/password.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password/password.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password/password.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/password/password.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/register/register.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/register/register.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/register/register.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/register/register.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/settings/settings.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/settings/settings.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/account/settings/settings.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/admin.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/admin.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/audits/audit-data.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/audits/audit.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/audits/audits.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/audits/audits.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/audits/audits.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/audits/audits.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/configuration/configuration.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/configuration/configuration.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/configuration/configuration.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/configuration/configuration.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/docs/docs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/docs/docs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/docs/docs.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/health/health-modal.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/health/health-modal.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/health/health.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/health/health.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/health/health.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/health/health.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/logs/log.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/logs/logs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/logs/logs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/logs/logs.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/logs/logs.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/metrics/metrics-modal.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/metrics/metrics-modal.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/metrics/metrics.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/metrics/metrics.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/metrics/metrics.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/metrics/metrics.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management-delete-dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management-delete-dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management-dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management-dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-management.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/admin/user-management/user-modal.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/app.constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/app.main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/app.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/blocks/config/prod.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/blocks/config/uib-pagination.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/blocks/interceptor/auth-expired.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/blocks/interceptor/auth.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/blocks/interceptor/errorhandler.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/blocks/interceptor/notification.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/entities/entity.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/home/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/home/home.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/home/home.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/home/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/error/error.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/error/error.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/error/error.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/footer/footer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/main/main.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/main/main.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/navbar/navbar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/navbar/navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/navbar/navbar.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/profiles/page-ribbon.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/profiles/page-ribbon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/profiles/profile-info.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/layouts/profiles/profile.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/alert/alert-error.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/alert/alert.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/auth/account.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/auth/auth-jwt.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/auth/csrf.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/auth/has-any-authority.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/auth/principal.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/auth/state-storage.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/auth/user-route-access-service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/constants/error.constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/constants/pagination.constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/login/login-modal.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/login/login.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/model/base-entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/model/request-util.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/shared-common.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/shared-libs.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/shared.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/user/account.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/user/user.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/shared/user/user.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/app/vendor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/content/css/documentation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/content/css/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/content/css/vendor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/content/images/hipster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/content/images/hipster2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/content/images/logo-jhipster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/manifest.webapp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/swagger-ui/dist/images/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/webapp/swagger-ui/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/config/WebConfigurerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/config/WebConfigurerTestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/repository/CustomAuditEventRepositoryIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/security/DomainUserDetailsServiceIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/security/SecurityUtilsUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/security/jwt/JWTFilterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/security/jwt/TokenProviderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/service/MailServiceIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/service/UserServiceIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/AccountResourceIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/AuditResourceIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/LogsResourceIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/ProfileInfoResourceIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/TestUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/UserJWTControllerIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/UserResourceIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/errors/ExceptionTranslatorIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/errors/ExceptionTranslatorTestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/mycompany/myapp/web/rest/util/PaginationUtilUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/account/activate/activate.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/account/password-reset/finish/password-reset-finish.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/account/password-reset/init/password-reset-init.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/account/password/password-strength-bar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/account/password/password.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/account/register/register.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/account/settings/settings.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/admin/audits/audits.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/admin/health/health.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/admin/user-management/user-management-delete-dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/admin/user-management/user-management-detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/admin/user-management/user-management-dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/admin/user-management/user-management.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/shared/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/app/shared/user/user.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/entry.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/helpers/mock-account.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/helpers/mock-active-modal.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/helpers/mock-event-manager.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/helpers/mock-login.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/helpers/mock-principal.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/helpers/mock-route.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/helpers/mock-state-storage.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/helpers/spyobject.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/javascript/spec/test.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/resources/config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/resources/i18n/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/resources/mails/testEmail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tsconfig-aot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webpack/logo-jhipster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webpack/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webpack/webpack.common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webpack/webpack.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webpack/webpack.prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webpack/webpack.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zegum/github/zegum-monolith" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zegum/meetingfaces" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zegum/microsoft-face-recognition-spring-boot-starter/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zegum/microsoft-face-recognition-spring-boot-starter/out/production/resources/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zegum/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zegum/zegum-back" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zegum/zegum-client" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zegum/zmileTransport.patch" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tomatosKillerPi" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tomatosKillerPi" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tomatosKillerPi" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tomatosKillerPi" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tomatosKillerPi" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tomatosKillerPi" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tomatosKillerPi" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2066978027">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gradle" value="9" />
+          <entry key="java" value="208" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Groovy" value="9" />
+          <entry key="JAVA" value="208" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="62" />
+          <entry key="java" value="799" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="62" />
+          <entry key="JAVA" value="799" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/EventListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="774">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mod</find>
+      <find>by.issoft.stomp.</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>by.jfuture.tomatos.killer.pi.stomp.</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Program Files\Gradle\gradle-4.8.1" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.8.1" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="tomatosKillerPi" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="tomatosKillerPi" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'tomatosKillerPi'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'tomatosKillerPi'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'tomatosKillerPi'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'tomatosKillerPi'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'tomatosKillerPi'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'tomatosKillerPi'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'tomatosKillerPi'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'tomatosKillerPi'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'tomatosKillerPi'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4608307554388" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="273506198" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="1493042311" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="tomatosKillerPi" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/announce" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/antlr" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/base-services" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/base-services-groovy" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/build-cache" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/build-cache-http" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/build-comparison" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/build-init" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/build-option" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/cli" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/code-quality" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/composite-builds" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/core" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/core-api" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/dependency-management" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/diagnostics" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/ear" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/ide" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/ide-native" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/ide-play" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/installation-beacon" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/internal-android-performance-testing" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/internal-integ-testing" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/internal-performance-testing" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/internal-testing" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/ivy" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/jacoco" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/javascript" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/jvm-services" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/language-groovy" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/language-java" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/language-jvm" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/language-native" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/language-scala" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/launcher" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/logging" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/maven" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/messaging" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/model-core" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/model-groovy" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/native" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/osgi" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/persistent-cache" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/platform-base" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/platform-jvm" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/platform-native" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/platform-play" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/plugin-development" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/plugin-use" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/plugins" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/process-services" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/publish" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/reporting" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/resources" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/resources-gcs" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/resources-http" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/resources-s3" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/resources-sftp" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/scala" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/signing" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/test-kit" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/testing-base" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/testing-junit-platform" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/testing-jvm" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/testing-native" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/tooling-api" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/tooling-api-builders" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/version-control" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/workers" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/src/wrapper" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/ant-1.9.11.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/ant-launcher-1.9.11.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-base-services-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-base-services-groovy-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-build-cache-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-build-option-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-cli-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-core-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-core-api-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-docs-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-installation-beacon-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-jvm-services-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-kotlin-dsl-0.17.5.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-kotlin-dsl-provider-plugins-0.17.5.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-kotlin-dsl-provider-spi-0.17.5.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-kotlin-dsl-tooling-builders-0.17.5.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-kotlin-dsl-tooling-models-0.17.5.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-launcher-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-logging-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-messaging-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-model-core-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-model-groovy-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-native-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-persistent-cache-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-process-services-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-resources-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-runtime-api-info-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-tooling-api-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/gradle-wrapper-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/groovy-all-2.4.12.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-announce-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-antlr-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-build-cache-http-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-build-comparison-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-build-init-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-code-quality-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-composite-builds-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-dependency-management-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-diagnostics-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-ear-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-ide-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-ide-native-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-ide-play-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-ivy-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-jacoco-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-javascript-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-language-groovy-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-language-java-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-language-jvm-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-language-native-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-language-scala-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-maven-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-osgi-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-platform-base-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-platform-jvm-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-platform-native-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-platform-play-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-plugin-development-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-plugin-use-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-plugins-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-publish-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-reporting-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-resources-gcs-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-resources-http-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-resources-s3-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-resources-sftp-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-scala-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-signing-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-test-kit-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-testing-base-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-testing-junit-platform-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-testing-jvm-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-testing-native-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-tooling-api-builders-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-version-control-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/gradle-workers-4.8.1.jar" />
+                  <option value="C:/Program Files/Gradle/gradle-4.8.1/lib/plugins/ivy-2.2.0.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../tomatosKillerBackend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../../zegum/bitbucket/coherent-zmile-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../zegum/bitbucket/coherent-zmile-vending" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Headers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/ClientMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/ServerMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/EventLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Body.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/GumsServo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/EventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/Servo.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/module-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/PiServo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="100" />
+    <option name="y" value="24" />
+    <option name="width" value="1739" />
+    <option name="height" value="1015" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pi" type="462c0819:PsiDirectoryNode" />
+              <item name="servo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pi" type="462c0819:PsiDirectoryNode" />
+              <item name="subscribing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomatosKillerPi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jdk.incubator.httpclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jdk.incubator.httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jdk.incubator.httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomatosKillerPi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jdk.incubator.httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../zegum/bitbucket/coherent-zmile-vending" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\jfuture\tomatosKillerPi\src\main\java\by\jfuture\tomatos\killer\pi" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="by.jfuture.tomatos.killer.pi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\jfuture\tomatosKillerPi\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.tomatosKillerPi [build]">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.jfuture.tomatos.killer.pi.Main" />
+      <module name="tomatosKillerPi_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.jfuture.tomatos.killer.pi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tomatosKillerPi [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="tomatosKillerPi [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.tomatosKillerPi [build]" />
+      <item itemvalue="Gradle.tomatosKillerPi [compileJava]" />
+      <item itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.tomatosKillerPi [compileJava]" />
+        <item itemvalue="Gradle.tomatosKillerPi [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5c16f42-50cf-44de-bbdd-c4c41201375f" name="Default Changelist" comment="" />
+      <created>1536076418409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536076418409</updated>
+      <workItem from="1536076421853" duration="5552000" />
+      <workItem from="1536144875672" duration="196000" />
+      <workItem from="1536145232196" duration="10278000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16026000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="100" y="24" width="1739" height="1015" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27635497" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="JRebel" order="4" side_tool="true" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867885" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39960435" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32867885" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30827066" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32937685" />
+      <window_info anchor="bottom" id="JProfiler" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="Tail" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32936272" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="connect" />
+        <watch expression="connect.messageAsText()" />
+        <watch expression="connect.messageAsText()" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/command/CommandType.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/command/CommandSide.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Headers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/EventLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/SockJsEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/ServerMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/SmileCount.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/ClientMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/sockjs/FrameType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/MessagePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/jdk.incubator.httpclient/jdk/incubator/http/internal/websocket/WebSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="476" selection-start-line="476" selection-end-line="476" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/stomp/message/Body.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/FakeServo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/ServoLogging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/TwoSideConnectionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/TwoSideConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/Servo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/RotationParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/servo/PiServo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/RandomString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/module-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/jfuture/tomatos/killer/pi/subscribing/EventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jquery-3.3.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>tomatosKillerPi_main|tomatosKillerPi</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
