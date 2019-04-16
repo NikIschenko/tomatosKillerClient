@@ -1,12 +1,12 @@
-package by.jfuture.tomatos.killer.pi.subscribing;
+package com.jeeconf.tomatos.killer.pi.subscribing;
 
-import by.jfuture.tomatos.killer.pi.stomp.ClientMessage;
-import by.jfuture.tomatos.killer.pi.stomp.command.CommandType;
-import by.jfuture.tomatos.killer.pi.stomp.message.Message;
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.WebSocket;
+import com.jeeconf.tomatos.killer.pi.stomp.ClientMessage;
+import com.jeeconf.tomatos.killer.pi.stomp.command.CommandType;
+import com.jeeconf.tomatos.killer.pi.stomp.message.Message;
 
 import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.WebSocket;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
@@ -15,7 +15,7 @@ public class TwoSideConnection {
 	private WebSocket webSocket;
 
 	public TwoSideConnection(final HttpClient httpClient, final URI serverUri) {
-		this.webSocketCompletableFuture = httpClient.newWebSocketBuilder().buildAsync(serverUri, new EventListener());
+		this.webSocketCompletableFuture = httpClient.newWebSocketBuilder().buildAsync(serverUri, new EventListener()).toCompletableFuture();
 	}
 
 	public TwoSideConnection(final URI serverUri) {

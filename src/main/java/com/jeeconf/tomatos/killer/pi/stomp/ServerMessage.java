@@ -1,9 +1,9 @@
-package by.jfuture.tomatos.killer.pi.stomp;
+package com.jeeconf.tomatos.killer.pi.stomp;
 
-import by.jfuture.tomatos.killer.pi.stomp.command.Command;
-import by.jfuture.tomatos.killer.pi.stomp.message.Body;
-import by.jfuture.tomatos.killer.pi.stomp.message.Headers;
-import by.jfuture.tomatos.killer.pi.stomp.message.Message;
+import com.jeeconf.tomatos.killer.pi.stomp.command.Command;
+import com.jeeconf.tomatos.killer.pi.stomp.message.Body;
+import com.jeeconf.tomatos.killer.pi.stomp.message.Headers;
+import com.jeeconf.tomatos.killer.pi.stomp.message.Message;
 
 public class ServerMessage implements Message {
 	private final Command command;

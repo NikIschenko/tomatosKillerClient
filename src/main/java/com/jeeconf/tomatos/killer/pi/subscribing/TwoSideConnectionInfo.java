@@ -1,12 +1,11 @@
-package by.jfuture.tomatos.killer.pi.subscribing;
-
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.HttpRequest;
-import jdk.incubator.http.HttpResponse;
+package com.jeeconf.tomatos.killer.pi.subscribing;
 
 import java.io.IOException;
 import java.net.ConnectException;
 import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 public class TwoSideConnectionInfo {
 	private final URI serverUri;
@@ -26,7 +25,7 @@ public class TwoSideConnectionInfo {
 				.uri(serverUri)
 				.GET()
 				.build();
-		final HttpResponse<String> result = client.send(request, HttpResponse.BodyHandler.asString());
+		final HttpResponse<String> result = client.send(request, HttpResponse.BodyHandlers.ofString());
 		if (result.statusCode() != 200)
 			throw new ConnectException("Cant connect to server " + serverUri.toString());
 		return result.body(); //TODO: should be parsed in dto

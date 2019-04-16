@@ -1,10 +1,10 @@
-package by.jfuture.tomatos.killer.pi.stomp;
+package com.jeeconf.tomatos.killer.pi.stomp;
 
-import by.jfuture.tomatos.killer.pi.stomp.command.Command;
-import by.jfuture.tomatos.killer.pi.stomp.command.CommandType;
-import by.jfuture.tomatos.killer.pi.stomp.message.Body;
-import by.jfuture.tomatos.killer.pi.stomp.message.Headers;
-import by.jfuture.tomatos.killer.pi.stomp.message.Message;
+import com.jeeconf.tomatos.killer.pi.stomp.command.Command;
+import com.jeeconf.tomatos.killer.pi.stomp.command.CommandType;
+import com.jeeconf.tomatos.killer.pi.stomp.message.Body;
+import com.jeeconf.tomatos.killer.pi.stomp.message.Headers;
+import com.jeeconf.tomatos.killer.pi.stomp.message.Message;
 
 import java.util.HashMap;
 import java.util.Map;

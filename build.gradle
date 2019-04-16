@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'by.jfuture.tomatos.killer.pi'
+group 'com.jeeconf.tomatos.killer.pi'
 version '1.0-SNAPSHOT'
 sourceCompatibility = JavaVersion.VERSION_1_10
 
@@ -10,7 +10,7 @@ repositories {
     mavenCentral()
 }
 
-ext.moduleName = 'by.jfuture.tomatosKillerPi'
+ext.moduleName = 'com.jeeconf.tomatosKillerPi'
 
 compileJava {
     inputs.property("moduleName", moduleName)
@@ -24,7 +24,7 @@ compileJava {
 
 jar {
     manifest {
-        attributes "Main-Class": "by.jfuture.tomatos.killer.pi.Main"
+        attributes "Main-Class": "com.jeeconf.tomatos.killer.pi.Main"
     }
     from {
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }

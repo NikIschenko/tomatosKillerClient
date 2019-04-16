@@ -1,7 +1,7 @@
-package by.jfuture.tomatos.killer.pi.stomp.command;
+package com.jeeconf.tomatos.killer.pi.stomp.command;
 
-import static by.jfuture.tomatos.killer.pi.stomp.command.CommandSide.CLIENT;
-import static by.jfuture.tomatos.killer.pi.stomp.command.CommandSide.SERVER;
+import static com.jeeconf.tomatos.killer.pi.stomp.command.CommandSide.CLIENT;
+import static com.jeeconf.tomatos.killer.pi.stomp.command.CommandSide.SERVER;
 
 public enum CommandType {
 	CONNECT(CLIENT),

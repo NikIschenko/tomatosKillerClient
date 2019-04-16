@@ -1,4 +1,4 @@
-package by.jfuture.tomatos.killer.pi.stomp.message;
+package com.jeeconf.tomatos.killer.pi.stomp.message;
 
 
 public class Body implements MessagePart {

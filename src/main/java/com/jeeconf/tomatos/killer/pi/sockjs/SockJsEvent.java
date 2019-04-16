@@ -1,4 +1,4 @@
-package by.jfuture.tomatos.killer.pi.sockjs;
+package com.jeeconf.tomatos.killer.pi.sockjs;
 
 import java.util.Arrays;
 

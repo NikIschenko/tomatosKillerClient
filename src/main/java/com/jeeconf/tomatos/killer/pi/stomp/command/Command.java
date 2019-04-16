@@ -1,6 +1,6 @@
-package by.jfuture.tomatos.killer.pi.stomp.command;
+package com.jeeconf.tomatos.killer.pi.stomp.command;
 
-import by.jfuture.tomatos.killer.pi.stomp.message.MessagePart;
+import com.jeeconf.tomatos.killer.pi.stomp.message.MessagePart;
 
 public class Command implements MessagePart {
 	private final String commandAsText;

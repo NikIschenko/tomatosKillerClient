@@ -1,6 +1,6 @@
-package by.jfuture.tomatos.killer.pi.stomp.message;
+package com.jeeconf.tomatos.killer.pi.stomp.message;
 
-import by.jfuture.tomatos.killer.pi.stomp.command.Command;
+import com.jeeconf.tomatos.killer.pi.stomp.command.Command;
 
 public interface Message<T> {
 	Command command();

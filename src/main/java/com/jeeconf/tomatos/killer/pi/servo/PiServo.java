@@ -1,4 +1,4 @@
-package by.jfuture.tomatos.killer.pi.servo;
+package com.jeeconf.tomatos.killer.pi.servo;
 
 import java.io.IOException;
 

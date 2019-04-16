@@ -1,9 +1,8 @@
-package by.jfuture.tomatos.killer.pi;
+package com.jeeconf.tomatos.killer.pi;
 
-import by.jfuture.tomatos.killer.pi.servo.PiServo;
-import by.jfuture.tomatos.killer.pi.servo.RotationParameters;
-import by.jfuture.tomatos.killer.pi.subscribing.TwoSideConnection;
-import by.jfuture.tomatos.killer.pi.subscribing.TwoSideConnectionInfo;
+import com.jeeconf.tomatos.killer.pi.servo.PiServo;
+import com.jeeconf.tomatos.killer.pi.subscribing.TwoSideConnection;
+import com.jeeconf.tomatos.killer.pi.subscribing.TwoSideConnectionInfo;
 
 import java.io.IOException;
 import java.net.URI;
@@ -27,8 +26,8 @@ public class Main {
 	public static PiServo piServo;
 
 	private void run() throws URISyntaxException, IOException, InterruptedException, ExecutionException {
-		PiServo piServo = new PiServo(PIN, new RotationParameters(193, 180));
-		piServo.initialize();
+		//PiServo piServo = new PiServo(PIN, new RotationParameters(193, 180));
+		//piServo.initialize();
 
 		TwoSideConnectionInfo twoSideConnectionInfo = new TwoSideConnectionInfo(new URI("http://" + SERVER_URL+"/ws/info"));
 		System.out.println(twoSideConnectionInfo.serverInfo());

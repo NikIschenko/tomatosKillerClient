@@ -1,4 +1,4 @@
-package by.jfuture.tomatos.killer.pi;
+package com.jeeconf.tomatos.killer.pi;
 
 import java.util.Random;
 

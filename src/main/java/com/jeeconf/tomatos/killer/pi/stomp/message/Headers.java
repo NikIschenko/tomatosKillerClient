@@ -1,4 +1,4 @@
-package by.jfuture.tomatos.killer.pi.stomp.message;
+package com.jeeconf.tomatos.killer.pi.stomp.message;
 
 import java.util.Arrays;
 import java.util.HashMap;
