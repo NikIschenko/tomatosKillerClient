@@ -1,6 +1,7 @@
 package com.jeeconf.tomatos.killer.pi;
 
 import com.jeeconf.tomatos.killer.pi.servo.PiServo;
+import com.jeeconf.tomatos.killer.pi.servo.RotationParameters;
 import com.jeeconf.tomatos.killer.pi.subscribing.TwoSideConnection;
 import com.jeeconf.tomatos.killer.pi.subscribing.TwoSideConnectionInfo;
 
@@ -13,7 +14,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
-	private static final String SERVER_URL = "localhost:9991";
+	private static final String SERVER_URL = "tomatoskiller.tk";
 	private static final int PIN = 1;
 	private static final int PUSH_ANGLE = 193;
 	private static final int PULL_ANGLE = 180;
@@ -26,8 +27,8 @@ public class Main {
 	public static PiServo piServo;
 
 	private void run() throws URISyntaxException, IOException, InterruptedException, ExecutionException {
-		//PiServo piServo = new PiServo(PIN, new RotationParameters(193, 180));
-		//piServo.initialize();
+		PiServo piServo = new PiServo(PIN, new RotationParameters(PUSH_ANGLE, PULL_ANGLE));
+		piServo.initialize();
 
 		TwoSideConnectionInfo twoSideConnectionInfo = new TwoSideConnectionInfo(new URI("http://" + SERVER_URL+"/ws/info"));
 		System.out.println(twoSideConnectionInfo.serverInfo());
