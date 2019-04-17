@@ -27,7 +27,7 @@ public class Main {
 	public static PiServo piServo;
 
 	private void run() throws URISyntaxException, IOException, InterruptedException, ExecutionException {
-		PiServo piServo = new PiServo(PIN, new RotationParameters(PUSH_ANGLE, PULL_ANGLE));
+		piServo = new PiServo(PIN, new RotationParameters(PUSH_ANGLE, PULL_ANGLE));
 		piServo.initialize();
 
 		TwoSideConnectionInfo twoSideConnectionInfo = new TwoSideConnectionInfo(new URI("http://" + SERVER_URL+"/ws/info"));
